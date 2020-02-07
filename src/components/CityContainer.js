@@ -167,7 +167,7 @@ class CityContainer extends Component {
   }
 
   renderRestaurantList = () => {
-    if (this.state.restaurants === null) {
+    if (!this.state.restaurants) {
       return (
         <div className="col-md text-center">
           <h5 className="text-muted" >Loading...</h5>
