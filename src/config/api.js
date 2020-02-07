@@ -1,6 +1,6 @@
 export const API = {
   zomato : {
     baseURL : "https://developers.zomato.com/api/v2.1/",
-    api_key : process.env.REACT_APP_ZOMATO_API_KEY
+    api_key : "760f2951ecbb0596506cc77456017303"
   }
 }
