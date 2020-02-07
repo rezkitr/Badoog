@@ -167,7 +167,7 @@ class CityContainer extends Component {
   }
 
   renderRestaurantList = () => {
-    if (!this.state.restaurants) {
+    if (this.state.restaurants === null) {
       return (
         <div className="col-md text-center">
           <h5 className="text-muted" >Loading...</h5>
@@ -175,7 +175,7 @@ class CityContainer extends Component {
       )
     }
 
-    if (this.state.restaurants.length > 0) {
+    else if (this.state.restaurants.length > 0) {
       return (
         this.state.restaurants.map(({ restaurant }) => (
           <RestaurantCard key={restaurant.id} restaurant={restaurant} priceFormat={(price) => this.priceFormat(price)} />
