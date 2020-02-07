@@ -1,0 +1,137 @@
+/* Pages */
+
+
+/* Navbar */
+
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-size: 28px;
+}
+
+/* Jumbotron home */
+.jumbotron-home {
+  background-size: cover;
+  height: 640px;
+  position: relative;
+}
+
+.jumbotron-home .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron-home::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron-home .display-4 {
+  color: white;
+  text-transform: capitalize;
+  margin-top: 150px;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.jumbotron-home hr {
+  border-bottom: 1px solid whitesmoke;
+  width: 30%;
+}
+
+.jumbotron-home blockquote {
+  color: white;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* City Pages */
+.city-container {
+  text-align: center; 
+}
+ .city-section {
+   margin-bottom: 30px;
+ }
+
+.resto-name {
+  font-weight: 700;
+  font-size: 30px;
+  color: #e66767;
+}
+
+
+/* Utilities */
+.my-btn {
+  border-radius: 40px;
+}
+
+.form-control {
+  margin-bottom: 8px;
+}
+
+.search-btn {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 150px;
+}
+
+.footer {
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+
+
+/* DESKTOP */
+@media (min-width: 992px) {
+
+  .navbar-brand {
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+
+  /* jumbotron-home */
+  .jumbotron-home {
+    margin-top: -110px;
+    height: 980px;
+  }
+
+  .jumbotron-home .display-4 {
+    font-size: 64px;
+    margin-top: 250px;
+  }
+
+  .jumbotron-home blockquote {
+    font-size: 28px;
+  }
+
+  /* City pages */
+  .city-container {
+    text-align: left;
+  }
+
+  /* Restaurant Card */
+  .restaurant-card {
+    text-align: left;
+  }
+
+  /* utilities */
+  .form-control {
+    margin-bottom: 0;
+  }
+
+  .search-btn {
+    text-align: left;
+  }
+
+}
